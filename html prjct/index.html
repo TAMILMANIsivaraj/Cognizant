@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Tacobel
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+           <h1>LTS Tacobel Shop</h1> 
+        </header>
+        <nav>
+            <ul>
+                
+                <li>
+                   <a href="#about">About LTS</a> 
+                   <!-- in the href attribute mention the id of article -->
+                </li>
+                <li>
+                    <a href="#ourmenu">Our Menu</a>
+                </li>
+                <li>
+                    <a href="#storehours">Store Hours</a>
+                </li>
+                <li>
+                    <a href="#contactus">Contact us</a>
+                </li>
+                <li>
+                    <a href="#ourlocation">Our location</a>
+                </li>
+            </ul>
+        </nav>
+        <figure>
+            <img src="C:\html prjct\image\pngtree-mexican-taco-crepes-with-lemon-sauce-psd-transparent-png-image_6720528.png" alt="tacos pic" title="picture of tacos" width="400" height="400">
+            <figcaption>
+                Tacos for snack
+                <!-- figcaption refer caption for pic-->
+            </figcaption>
+        </figure>
+        <hr>
+        <main>
+            <article id =about>
+                <h2>About LTS</h2>
+                <p>LTS was found in 2022. Our shop was built from a <strong>love of tacos. </strong>Its a interesting place to our town.</p> 
+                <aside>
+                    <h3>Taco trivia</h3>
+                    
+                        <details>
+                            <!-- details tag is for the down arrow which is opened and closed-->
+                           <summary>
+                            <!--Summary is for the visible headline for details(content) -->
+                            When did Tacos first appear in <a href="https://en.wikipedia.org/wiki/United_States">United States</a> ?
+                           </summary>
+                             <p>At 1920 Tavern in Roswell, we believe that tacos should be enjoyed by everyone. That's why we offer various types of tacos, all of which are made with fresh, quality ingredients.    
+                           </p>
+                        </details>
+                    </aside>
+            </article>
+            <hr>
+            <article id = ourmenu>
+                <h2> Our menu</h2>
+                <table>
+                    <caption>Our Tacos</caption>
+                    <thead>
+                        <!-- thead heading portion of table-->
+                        <tr>
+                            <th>Tacos</th>
+                            <th>Quantiy</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--tbody main body of table-->
+                        <tr>
+                            <th scope="row" rowspan="3">Crunchy</th>
+                            <!-- rowspan is to use the same data for the number mentioned rows-->
+                            <td>1</td>
+                            <td>$1.89</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>$4.6</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>$3.6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="3">Soft</th>
+                            <td>1</td>
+                            <td>$6.7</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>$8.7</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>$6.5</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">
+                                    <!-- colspan same as row span-->
+                                    Chips and salsa $3
+                                </td>
+                            </tr>
+                        </tfoot>
+                         </table>
+                        
+            </article>
+            <hr>
+
+            <article id =storehours>
+                <h2>store hours</h2>
+                <p>
+                    we are open 7days a week
+                </p>
+                <dl>
+                    <!-- dl description list tag-->
+                    <dt>Sunday-thursday</dt>
+                    <dd>11am-9pm</dd>
+                    <dt>Friday-Saturday</dt>
+                    <dd>11am-1pm</dd>
+                </dl>
+            </article>
+            <hr>
+            <article id="contactus">
+                <h2>Our Contact form</h2>
+                <form action ="https://httpbin.org/post", method="post">
+                    <fieldset>
+                            <!-- fieldset to bring a box like border-->
+                        <legend>Send us a message</legend>
+                        <!-- legend for displaying title of form in box-->
+                        <p>
+                            <label for="name">Name</label>
+                            <input type="text" name="name"id=name placeholder="Type your name" required>
+                            </p>
+                            <p>
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" placeholder="Type your email" required>
+                            </p>
+                            <p>
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" placeholder="Type your password" required>
+                            </p>
+                            <p>
+                                <label for="phoneno">Phone No</label>
+                                <input type="tel" name="phoneno" id="phoneno" placeholder="Type your phone no"  >
+                            </p>
+                            <p>
+                                <label for="budget">Budget</label>
+                                <input type ="number" name="budget" id="budget" min="200" max="800" value="200" step="10">
+                            </p>
+                            <p>
+                                <label for="favfood">Favourite food</label>
+                                <select name="favfood" id="favfood" multiple>
+                                    <optgroup label="Non-veg category">
+                                    <option value="chicken burger">Chicken Burger</option>
+                                    <option value="mutton burger">Mutton burger</option>
+                                </optgroup>
+                                <optgroup label="veg category">
+                                    <option value="veg burger">Veg burger</option>
+                                    <option value="cheese burger">Cheese burger</option>
+                                </optgroup>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="favfood">Favourite food</label>
+                                <input type="text" name="favfood" id="favfood" list="content-list">
+                                <datalist id="content-list">
+                                    <option value="chicken burger"></option>
+                                    <option value="mutton burger"></option>
+                                    <option value="veg burger"></option>
+                                    <option value="cheese burger"></option>
+                                </datalist>
+                            </p>
+                            <p>
+                                favourite food
+                                <input type="radio" name="chicken" id="chicken">
+                                <label for="Chicken">Chicken</label>
+                                <input type="radio" name="mutton" id="mutton">
+                                <label for="mutton">mutton</label>
+                                <input type="radio" name="veg" id="veg">
+                                <label for="veg">veg</label>
+                            </p>
+                            <p>
+                                Favourite Food
+                                <input type="checkbox" name="chicken" id="chicken">
+                                <label for="Chicken">Chicken</label>
+                                <input type="checkbox" name="mutton" id="mutton">
+                                <label for="mutton">mutton</label>
+                                <input type="checkbox" name="veg" id="veg">
+                                <label for="veg">veg</label>
+                            </p>
+                            <p>
+                            <label for="message">Message</label>
+                            <br>
+                            <textarea name="message" id="message" placeholder="Type your messaage here"></textarea>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <button type="Submit">Submit</button>
+                    <button type="Submit">Reset</button>
+                </form>
+            </article>
+            <hr>
+            <article id="ourlocation">
+                <h2>Our Location</h2>
+                <p> 
+                    <!--em tag for italics font-->
+                    <em>555 Taco Temptation lane,<br>
+                        Suite T Kansas City
+                        M0 555555
+                    </em>
+                </p>
+            </article>
+        </main>
+        <br>
+        
+        <footer>
+                <a href="#">Back to top</a>
+                <!-- # attribute act as common id to navigate to top-->
+             
+            <p>Copyright &copy; The little taco shop
+                <!--&command is for copyright symbol we get.. &gtfor greater symbol and &lt for less symbol-->
+            </p>
+        </footer>
+    </body>
+
+</html>
